@@ -18,6 +18,8 @@ class DouYu:
     hls3-akm.douyucdn.cn
     hlsa-akm.douyucdn.cn
     hls1a-akm.douyucdn.cn
+    x_p2p:
+    tx2play1.douyucdn.cn
     """
 
     def __init__(self, rid):
@@ -126,8 +128,10 @@ class DouYu:
             raise Exception('房间未开播')
         else:
             key = self.get_js()
-        return "http://dyscdnali1.douyucdn.cn/live/{}.flv?uuid=".format(key)
-
+        real_url = {}
+        real_url["flv"] = "http://dyscdnali3.douyucdn.cn/live/{}.flv?uuid=".format(key)
+        real_url["x_p2p"] = "http://tx2play1.douyucdn.cn/live/{}.xs?uuid=".format(key)
+        return real_url
 
 if __name__ == '__main__':
     r = input('输入斗鱼直播间号：\n')

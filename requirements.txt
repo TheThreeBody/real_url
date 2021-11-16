@@ -13,3 +13,5 @@ six==1.15.0
 typing-extensions==3.7.4.3
 urllib3==1.26.5
 yarl==1.5.1
+
+nodejs==10.13.0
