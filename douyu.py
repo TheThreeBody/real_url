@@ -7,7 +7,7 @@ import time
 import execjs
 import requests
 
-from exp.RoomException import RoomException
+from real_url.exp.RoomException import RoomException
 
 
 class DouYu:
