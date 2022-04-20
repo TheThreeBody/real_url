@@ -22,6 +22,12 @@ class DouYu:
     hls1a-akm.douyucdn.cn
     x_p2p:
     tx2play1.douyucdn.cn
+https://github.com/wbt5/real-url/issues/185
+
+akm-tct.douyucdn.cn 今天用着不知道为什么容易卡 又找了找
+更新今天(3-29)发现的
+vplay1a.douyucdn.cn
+vplay3a.douyucdn.cn
     """
 
     def __init__(self, rid):
@@ -133,8 +139,12 @@ class DouYu:
         real_url = {}
         # if key.isspace():
         #     real_url["flv"] = "http://dyscdnali3.douyucdn.cn/live/{}.flv".format(key)
-        real_url["flv"] = "http://dyscdnali3.douyucdn.cn/live/{}.flv".format(key)
-        real_url["x_p2p"] = "http://tx2play1.douyucdn.cn/live/{}.xs".format(key)
+        # real_url["flv"] = "http://dyscdnali3.douyucdn.cn/live/{}.flv".format(key)
+        # real_url["x_p2p"] = "http://tx2play1.douyucdn.cn/live/{}.xs".format(key)
+
+        real_url["akm_tct"] = "http://akm-tct.douyucdn.cn/live/{}.flv".format(key)
+        real_url["vplay1"] = "http://vplay1a.douyucdn.cn/live/{}.flv".format(key)
+        real_url["vplay3"] = "http://vplay3a.douyucdn.cn/live/{}.flv".format(key)
         return real_url
 
 if __name__ == '__main__':
