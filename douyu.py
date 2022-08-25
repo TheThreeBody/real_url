@@ -143,7 +143,7 @@ vplay3a.douyucdn.cn
         # real_url["x_p2p"] = "http://tx2play1.douyucdn.cn/live/{}.xs".format(key)
 
         real_url["akm_tct"] = "http://akm-tct.douyucdn.cn/live/{}.flv".format(key)
-        real_url["vplay1"] = "http://vplay1a.douyucdn.cn/live/{}.flv".format(key)
+        real_url["ws_tct"] = "http://ws-tct.douyucdn.cn/live/{}.flv".format(key)
         real_url["vplay3"] = "http://vplay3a.douyucdn.cn/live/{}.flv".format(key)
         return real_url
 
